@@ -1,0 +1,38 @@
+name: mila_milo
+description: Educatieve app voor kinderen - Mila & Milo
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  flutter_riverpod: ^2.4.9
+  riverpod_annotation: ^2.3.3
+  confetti: ^0.7.0
+  intl: ^0.20.2
+  shared_preferences: ^2.2.2
+  google_fonts: ^6.1.0
+  flutter_tts: ^4.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+  riverpod_generator: ^2.3.9
+  build_runner: ^2.4.8
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/images/karakters/
+    - assets/images/karakters/hamster/
+    - assets/images/karakters/kat/
+    - assets/images/woorden/
+    - assets/images/objecten/
