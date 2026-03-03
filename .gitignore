@@ -61,6 +61,13 @@ ios/Flutter/Flutter.framework
 ios/Flutter/Flutter.podspec
 ios/Flutter/App.framework
 
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Flutter SDK (gebruik systeem-Flutter, niet in repo)
+flutter/
+
 # Misc
 *.aab
 *.apk
