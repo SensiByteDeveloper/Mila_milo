@@ -36,11 +36,15 @@ jobs:
       - name: Get dependencies
         run: flutter pub get
 
-      - name: Build App Bundle
-        run: flutter build appbundle --release
+      - name: Make Gradle wrapper executable
+        run: chmod +x android/gradlew
+
+      - name: Build App Bundle (Gradle)
+        working-directory: android
+        run: ./gradlew :app:bundleRelease --stacktrace
 
       - name: Upload App Bundle
         uses: actions/upload-artifact@v4
         with:
           name: app-release
-          path: build/app/outputs/bundle/release/app-release.aab
+          path: android/app/build/outputs/bundle/release/app-release.aab
