@@ -72,3 +72,8 @@ flutter/
 *.aab
 *.apk
 *.zip
+
+# FVM Version Cache
+.fvm/
+# Build symbols
+symbols/
