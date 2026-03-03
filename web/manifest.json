@@ -1,0 +1,9 @@
+{
+    "name": "Mila & Milo op school",
+    "short_name": "Mila & Milo",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#FFFFFF",
+    "theme_color": "#4CAF50",
+    "description": "Educatieve app voor kinderen - Mila en Milo op school"
+}
