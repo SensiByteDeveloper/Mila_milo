@@ -43,14 +43,8 @@ jobs:
         working-directory: android
         run: ./gradlew :app:bundleRelease --stacktrace
 
-      - name: Locate AAB
-        run: |
-          echo "Searching for .aab..."
-          find . -maxdepth 6 -type f -name "*.aab" || true
-          ls -la android/app/build/outputs/bundle/release || true
-
       - name: Upload App Bundle
         uses: actions/upload-artifact@v4
         with:
           name: app-release
-          path: "**/*.aab"
+          path: build/app/outputs/bundle/release/app-release.aab
